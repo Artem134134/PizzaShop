@@ -7,20 +7,28 @@
  	<div>
  		<%= p.title %>
     </div>
-
+    		
 
 	<div>
-    	<img src="<%= p.path_to_image %>" />	
+    	<img src="<%= p.path_to_image %>" width="300" height="200" />	
     </div>
-
+    		
 
  	<div>
  		<%= p.description %>		
     </div> 
+    	
+    <div>
+ 		Size: <%= p.size %> cm		
+    </div> 
+    	
 
+    <div>
+ 		Price:  <%= p.price %>	rub	
+    </div> 
+    	<br />	
 
 </div>
-
 	<% end %>
 
 
