@@ -1,9 +1,19 @@
 <h2>Welcome to PizzaShop!</h2>
 
+<div class="row">
+
 <% @products.each do |p| %>
-<p>
-	product
-</p>
+ <div class="col-md-3">
+ 	<%= p.title %>
+   
+</div>
+
+
 <% end %>
+
+
+
+
+</div>
 
 <button class="btn btn-primary" onclick="something()">Click me!</button>
