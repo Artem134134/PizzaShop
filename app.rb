@@ -15,10 +15,15 @@ get '/' do
 	erb :index			
 end
 
+post '/cart' do
+  erb :cart 
+end
+
 get '/about' do
     erb :about
 end
 
-post '/cart' do
-    erb "Hello !!!"
+get  '/cart' do
+    @products = Product.all
+    erb :cart 
 end

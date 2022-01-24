@@ -19,6 +19,7 @@ function add_to_cart(id)
   window.localStorage.setItem(key, x);
 
   update_orders_input();
+  update_orders_button();
   // вывод кол-ва items в корзине
  // alert('Items in your cart: ' + all_items_in_cart());
 }
@@ -29,6 +30,11 @@ function update_orders_input()
     $('#orders_input').val(orders);
 }
 
+function update_orders_button()
+{
+    var text = 'Cart (' + all_items_in_cart() + ')';
+    $('#orders_button').val(text);
+}
 
 function all_items_in_cart()
 {
