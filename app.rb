@@ -20,16 +20,12 @@ get '/about' do
     erb :about
 end
 
-get  '/cart' do
-    erb :cart 
-end
-
 
 post '/cart' do
   orders_input = params[:orders]
   @orders = parse_orders_input orders_input
 
-  erb " Hello! #{@orders.inspect}"
+  erb :cart
 end
 
 
