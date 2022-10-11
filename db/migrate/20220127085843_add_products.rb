@@ -33,6 +33,18 @@ class AddProducts < ActiveRecord::Migration[6.1]
      :is_best_offer => true,
      :path_to_image => '/images/veg.jpg'
 })
+
+
+    Product.create ({ 
+      :title => 'Salami',
+     :description => 'Great Salami pizza',
+      :price => 600,
+       :size  => 45,
+        :is_spicy => false,
+         :is_veg => false,
+          :is_best_offer => false, 
+          :path_to_image => '/images/salami.jpg'
+    })
     
   end
 end

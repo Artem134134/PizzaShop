@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html>
 
-<h2 >Welcome to PizzaShop!</h2>
-
+<h2 align="center">Welcome to PizzaShop!</h2>
+<br />
 <div class="row" style="background-color:Gainsboro;">
 
 <% @products.each do |p| %>
  <div class="col-md-3">
- 	<div>
- 		<%= p.title %>
+ 	<div align="center"><strong>
+ 		<%= p.title %></strong>
     </div>
     		
 
-	<div>
-    	<img src="<%= p.path_to_image %>" width="300" height="200" />	
+	<div align="center">
+    	<img src="<%= p.path_to_image %>" width="600" height="400" />	
     </div>
     		
 
- 	<div>
+ 	<div align="center">
  		<%= p.description %>		
     </div> 
     	
-    <div>
+    <div align="center">
  		Size: <%= p.size %> cm		
     </div> 
     	
 
-    <div>
+    <div align="center">
  		Price:  <%= p.price %>	rub	
     </div> 
     		
 
-    <div>
+    <div align="center">
 <button class="btn btn-sm btn-success" onclick="add_to_cart(<%= p.id %>)">Add to cart</button>
 	</div> 
 	<br />
