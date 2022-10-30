@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
 
+  <head>
+    <title>Index</title>
+  </head>
+      <body>
+
+
 <h2 align="center">Welcome to PizzaShop!</h2>
 <br />
 <div class="row" style="background-color:Gainsboro;">
 
 <% @products.each do |p| %>
- <div class="col-md-3">
+ <div class="col-md-3"><hr/>
  	<div align="center"><strong>
  		<%= p.title %></strong>
-    </div>
+    </div> 
     		
 
 	<div align="center">
-    	<img src="<%= p.path_to_image %>" width="600" height="400" />	
+    	<img src="<%= p.path_to_image %>" width="300" height="200" />	
     </div>
     		
 
@@ -45,9 +51,8 @@
 <br />
 <br />
 
-
-
-</html>
+   </body>
+   </html>
 
 <script type="text/javascript">
 
