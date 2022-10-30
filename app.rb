@@ -11,6 +11,7 @@ class Product < ActiveRecord::Base
 end
 
 class Order < ActiveRecord::Base
+# validates :name, presence: true
 end
 
 get '/' do
