@@ -37,7 +37,7 @@ post '/cart' do
 
   # выводим смс, что корзина пуста
 
-  if @items.length == 0 
+  if @items.size == 0 
     return erb :cart_is_empty
   end  
 

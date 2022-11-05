@@ -12,17 +12,16 @@
 <div class="row" style="background-color:Gainsboro;">
 
 <% @products.each do |p| %>
- <div class="col-md-3"><hr/>
+ <div class="col-md-4" class="col-sm-4" class="col-lg-4"><hr/>
  	<div align="center"><strong>
  		<%= p.title %></strong>
     </div> 
     		
 
-	<div align="center">
+	<div align="center" >
     	<img src="<%= p.path_to_image %>" width="300" height="200" />	
     </div>
     		
-
  	<div align="center">
  		<%= p.description %>		
     </div> 
@@ -31,7 +30,6 @@
  		Size: <%= p.size %> cm		
     </div> 
     	
-
     <div align="center">
  		Price:  <%= p.price %>	rub	
     </div> 
