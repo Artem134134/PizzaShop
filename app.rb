@@ -11,7 +11,9 @@ class Product < ActiveRecord::Base
 end
 
 class Order < ActiveRecord::Base
-# validates :name, presence: true
+  validates :name, presence: true, length:{ minimum: 3}
+  validates :phone, presence: true, length:{ minimum: 3}
+  validates :address, presence: true
 end
 
 get '/' do
