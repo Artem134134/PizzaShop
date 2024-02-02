@@ -53,6 +53,10 @@ post '/cart' do
   erb :cart
 end
 
+get '/contacts' do 
+  erb :contacts
+end
+
 
 
 def parse_orders_input orders_input
