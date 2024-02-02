@@ -24,4 +24,9 @@ body {
     background-image: url('/images/pizza.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+
   }
+
+ul {
+	font-family: 'Teko', sans-serif;
+}
